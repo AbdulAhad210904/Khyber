@@ -1,0 +1,11 @@
+.logo {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  border-radius: 50%; /* Make logo container circular */
+  overflow: hidden; /* Clip logo image to fit circle */
+  transform: translate(-50%, -50%);
+  position: absolute; /* Not strictly needed here, but can be useful for future layout flexibility */
+  top: calc(100% + 0px); /* Position logo below image with margin */
+  left: 50%;
+  box-shadow: 0 0 0 10px white; /* Add a white border with a spread radius of 5px */
+}
