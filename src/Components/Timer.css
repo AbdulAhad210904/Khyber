@@ -1,0 +1,10 @@
+/* Timer.css */
+.timer {
+    display: flex; /* Allow horizontal centering */
+    justify-content: center; /* Horizontally center content */
+  }
+  
+  .timer__content {
+    text-align: center; /* Center text within the content container */
+  }
+  
