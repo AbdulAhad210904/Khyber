@@ -95,7 +95,7 @@ nav {
 }
 
 .secondary-button {
-  padding: 2rem 2.5rem;
+  padding: 1rem 2rem;
   background-color: #fe9e0d;
   outline: none;
   border: none;
@@ -107,6 +107,7 @@ nav {
   transition: 0.2s;
   text-align: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .secondary-butto {
