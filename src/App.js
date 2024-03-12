@@ -10,14 +10,15 @@ import Timer from "./Components/Timer";
 function App() {
   const targetDate = new Date('2024-03-11T15:00:00');
   return (
-    <div className="App">
+    <div>
+    <div className="App " style={{marginTop:'2rem'}}>
       <Navbar></Navbar>
       <Header></Header>
       <Home />
 
       <div className="app">
       <div className="container">
-        <h1 className="header">
+        <h1 className="header_timer">
         Get 15% Off <br></br>
 THE JUICIEST TENDERS IN THE TOWN
         </h1>
@@ -30,6 +31,7 @@ THE JUICIEST TENDERS IN THE TOWN
       <Testimonial />
       <Contact />
       <Footer />
+    </div>
     </div>
   );
 }

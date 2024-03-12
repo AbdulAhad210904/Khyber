@@ -1,6 +1,5 @@
 import React from 'react';
-import './Timer.css'; // Import your CSS file if needed
-import { useState,useEffect } from 'react';
+import './Timer.css'; 
 
 
 const Timer = () => {
@@ -9,11 +8,11 @@ const Timer = () => {
     const [minutes, setMinutes] = React.useState(0);
     const [seconds, setSeconds] = React.useState(0);
   
-    const deadline = "December, 31, 2022";
+    const deadline = new Date(Date.now() + 5 * 60 * 1000); // Deadline set to 5 minutes from now
   
     const getTime = () => {
-      const time = Date.parse(deadline) - Date.now();    
-  
+      const time = deadline - Date.now();    
+      console.log(time,'test: ',deadline,"dar",Date.now());
       setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
       setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
       setMinutes(Math.floor((time / 1000 / 60) % 60));
@@ -30,7 +29,7 @@ const Timer = () => {
       <div className="timer" role="timer">
         <div className="col-4">
           <div className="box">
-            <p id="day">{days < 10 ? "0" + days : days}</p>
+            <p id="day">{days < 0 ? "0" + days : days}</p>
             <span className="text">Days</span>
           </div>
         </div>

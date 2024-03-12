@@ -5,7 +5,8 @@ import DeliveryMeals from "../Assets/delivery-image.png";
 import { FiArrowRight } from "react-icons/fi";
 import ReactCardSlider from 'react-card-slider-component';
 import  milkshake  from "../images/chocolate milkshake.jpeg";
-
+import SwipeableTextMobileStepper from "./Slider.js"
+import Carding from './Menu_item';
 
 const Work = () => {
   function sliderClick() {
@@ -45,18 +46,9 @@ const Work = () => {
   ];
   return (
     <>
-    <ReactCardSlider slides={slides}/>
-    <div className="box">
-      <div className="image">
-        <button className="price">$10.99 USD</button>
-        <img src={milkshake} alt="Chocolate Milkshake" />
-      </div>
-      <h3 className="tittle">Classic Burger</h3>
-      <p className="sub-tittle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.
-      </p>
-    </div>
+    <SwipeableTextMobileStepper></SwipeableTextMobileStepper>
     <div className="work-section-wrapper">
+
       <div className="work-section-top">
         <h1 className="primary-heading">Browse menu by Category</h1>
       </div>
