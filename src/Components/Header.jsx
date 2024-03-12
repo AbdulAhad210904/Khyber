@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <img className="header__image" src={headerImage} alt="Restaurant landscape photo" />
-      <Logo className="header__logo" style={{ marginTop: '20px' }} /> {/* Add margin below image */}
+      <Logo className="header__logo" style={{ marginTop: '1%' }} /> {/* Add margin below image */}
     </header>
   );
 };

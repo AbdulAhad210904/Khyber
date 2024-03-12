@@ -14,8 +14,18 @@ function App() {
       <Navbar></Navbar>
       <Header></Header>
       <Home />
-      <Timer targetDate={targetDate}></Timer>
+
+      <div className="app">
+      <div className="container">
+        <h1 className="header">
+        Get 15% Off <br></br>
+THE JUICIEST TENDERS IN THE TOWN
+        </h1>
+        <Timer />
+      </div>
+    </div>
       
+
       <Work />
       <Testimonial />
       <Contact />
