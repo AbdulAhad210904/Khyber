@@ -1,12 +1,9 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import PickMeals from "../../Assets/pick-meals-image.png";
+import ChooseMeals from "../../Assets/choose-image.png";
+import DeliveryMeals from "../../Assets/delivery-image.png";
 import { FiArrowRight } from "react-icons/fi";
-import ReactCardSlider from 'react-card-slider-component';
-import  milkshake  from "../images/chocolate milkshake.jpeg";
 import SwipeableTextMobileStepper from "./Slider.js"
-import Carding from './Menu_item';
 
 const Work = () => {
   function sliderClick() {

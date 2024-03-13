@@ -1,8 +1,7 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
-import "./Home.css";
+import "./Heading.css";
 
-const Home = () => {
+const Heading = () => {
   return (
     <div className="home-container">
       
@@ -27,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Heading;

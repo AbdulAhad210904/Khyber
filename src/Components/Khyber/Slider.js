@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Carders from './Menu_item';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 const items = [
   {
@@ -41,16 +41,14 @@ const SwiperComponent = () => {
   return (
     <Swiper
       spaceBetween={30}
+      slidesPerView={2}
       centeredSlides={true}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
       }}
-      pagination={{
-        clickable: true,
-      }}
       navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
+      modules={[Autoplay, Navigation]}
       className="mySwiper"
     >
       {items.map((item, index) => (
